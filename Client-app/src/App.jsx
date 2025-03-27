@@ -1,10 +1,11 @@
+import Home from "./Components/Home"
 
 function App() {
 
   return (
     <>
       <div>
-        <p className="size-48">This App.js</p>
+        <Home/>
       </div>
     </>
   )
