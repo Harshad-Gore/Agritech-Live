@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div>
-        This App.js
+        <p className="size-48">This App.js</p>
       </div>
     </>
   )
