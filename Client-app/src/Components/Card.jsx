@@ -1,8 +1,8 @@
 import React from "react";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 
-export const Card = ({ title, price, image, description, addToCart, removeFromCart, cart }) => {
-  const isAdded = cart.some((item) => item.title === title);
+export const Card = ({ id, title, price, image, description, addToCart, removeFromCart, cart }) => {
+  const isAdded = cart.some((item) => item.id === id);
 
   return (
     <div className="border p-4 rounded-lg shadow-md text-center hover:scale-105 w-[300px]">
@@ -14,15 +14,15 @@ export const Card = ({ title, price, image, description, addToCart, removeFromCa
           <FaIndianRupeeSign className="mr-1" /> {price}
         </span>
         {isAdded ? (
-          <button
-            onClick={() => removeFromCart({ title, price })}
+          <button 
+            onClick={() => removeFromCart(id)} 
             className="px-3 py-2 bg-red-500 text-white rounded hover:bg-red-600 cursor-pointer"
           >
-            Remove
+            Remove from Cart
           </button>
         ) : (
-          <button
-            onClick={() => addToCart({ title, price, image, description })}
+          <button 
+            onClick={() => addToCart({ id, title, price, image, description, quantity: 1 })} 
             className="px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700 cursor-pointer"
           >
             Add to Cart

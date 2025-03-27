@@ -14,7 +14,7 @@ const Map = () => {
 
     L.marker([18.6667, 73.9000])
       .addTo(map)
-      .bindPopup("Welcome to Alandi")
+      .bindPopup("Alandi")
       .openPopup();
 
     return () => {
