@@ -141,7 +141,7 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Contact Info Section */}
+        {/* Contact Info Section*/}
         <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Get in Touch with Us</h2>
           <p className="mb-2"><strong>Address:</strong><br /> Alandi, Pune, Maharashtra, India</p>
