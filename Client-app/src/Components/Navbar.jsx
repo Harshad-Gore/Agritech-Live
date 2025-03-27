@@ -13,12 +13,15 @@ function Navbar({ cart }) {
         <Link to="/contact" className="px-4 py-2 text-white font-bold hover:text-black">Contact</Link>
       </div>
 
-      <div className="flex items-center gap-6">
-        {/* Language Change Icon */}
-        <FaGlobe className="text-white text-2xl cursor-pointer hover:scale-110" />
-        
-        {/* Google Translate Dropdown */}
-        <div id="google_translate_element" className="text-white w-[5px] h-[5px] relative top-[-5px] right-[70px] opacity-0"></div>
+      <div className="flex items-center gap-6 relative">
+        {/* Language Change Icon with Overlapping Google Translate */}
+        <div className="relative">
+          <FaGlobe className="text-white text-2xl cursor-pointer hover:scale-110" />
+          <div 
+            id="google_translate_element"
+            className="absolute inset-0 scale-[0.6] origin-center top-[-4px] right-[80px] opacity-0"
+          ></div>
+        </div>
 
         {/* Cart Icon */}
         <Link to="/cart" className="relative">
