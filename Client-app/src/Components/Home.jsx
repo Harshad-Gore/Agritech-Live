@@ -1,16 +1,6 @@
-import Navbar from "./Navbar"
-
 function Home() {
-
-    return (
-      <>
-        <div>
-            <Navbar/>
-          {/* <p className="size-48">This Home.js</p> */}
-        </div>
-      </>
-    )
+    return <div>Home Page</div>;
   }
   
-  export default Home
+  export default Home;
   
